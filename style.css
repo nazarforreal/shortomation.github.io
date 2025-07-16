@@ -112,7 +112,7 @@ body {
 .hero__brand-attribute {
   display: block;
   margin: 0 auto 1.5rem auto;
-  max-width: 120px;
+  max-width: 160px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -319,10 +319,13 @@ body {
   margin-top: 1rem;
 }
 .section--courses .card h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.08rem;
 }
 .section--courses .card p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.08rem;
+}
+.section--courses .card__actions {
+  margin-top: 0.08rem;
 }
 .section--featured .card h3 {
   min-height: 2.5em;
