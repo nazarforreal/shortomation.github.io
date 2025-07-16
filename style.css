@@ -178,6 +178,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  min-height: 340px;
 }
 .card__actions {
   margin-top: auto;
@@ -313,26 +314,15 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(24px); }
+  from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 .fade-in {
-  animation: fadeIn 0.8s cubic-bezier(0.4,0,0.2,1) both;
-}
-
-@keyframes fadeInOnScroll {
-  from { opacity: 0; transform: translateY(32px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.fade-in-on-scroll {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  animation: fadeIn 0.8s cubic-bezier(0.4,0.2,0.2,1) 0.1s forwards;
 }
-.fade-in-on-scroll.fade-in-on-scroll--visible {
-  opacity: 1;
-  transform: translateY(0);
-  animation: fadeInOnScroll 0.7s cubic-bezier(0.4,0,0.2,1) both;
+.main, .pane, .card {
+  will-change: opacity, transform;
 }
 
 @media (max-width: 800px) {

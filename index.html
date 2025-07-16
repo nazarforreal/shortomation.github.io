@@ -25,18 +25,18 @@
     <a href="https://nazarzhmurko.gumroad.com" class="btn btn--primary" target="_blank">Explore Shortcuts</a>
   </header>
   <main class="main fade-in">
-    <div class="pane fade-in-on-scroll">
+    <div class="pane fade-in">
       <section class="section section--featured">
         <h2>Featured Blog Posts</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card fade-in">
             <h3>How to Supercharge Notion with Shortcuts</h3>
             <p>Discover tips and tricks to automate your Notion workflow.</p>
             <div class="card__actions">
               <a href="blog.html" class="btn btn--primary">Read More</a>
             </div>
           </div>
-          <div class="card">
+          <div class="card fade-in">
             <h3>Ultimate Notion Shortcut Kits</h3>
             <p>Explore our curated kits for every Notion workspace.</p>
             <div class="card__actions">
@@ -46,26 +46,28 @@
         </div>
       </section>
     </div>
-    <div class="pane fade-in-on-scroll">
+    <div class="pane fade-in">
       <section class="section section--courses">
         <h2>Courses</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card fade-in">
             <h3>Automate Notion with Siri Shortcuts: Master Notion API + ChatGPT API Integration</h3>
             <p>Unlock the power of Notion and ChatGPT with Siri Shortcuts and API automation.</p>
-            <a href="https://nazarzhmurko.gumroad.com/l/yxicu?layout=profile" class="card__link" target="_blank">Learn more...</a>
+            <div class="card__actions">
+              <a href="https://nazarzhmurko.gumroad.com/l/yxicu?layout=profile" class="btn btn--primary" target="_blank">Learn more...</a>
+            </div>
           </div>
         </div>
       </section>
     </div>
-    <div class="pane fade-in-on-scroll">
+    <div class="pane fade-in">
       <section class="section section--newsletter">
         <h2>Join the Newsletter</h2>
         <p>Get the latest Notion shortcuts, kits, and updates straight to your inbox.</p>
         <iframe src="https://nazarshortcuts.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
       </section>
     </div>
-    <div class="pane fade-in-on-scroll">
+    <div class="pane fade-in">
       <section class="section section--consulting">
         <h2>Consulting</h2>
         <p>Hire me to create personalized Notion shortcut kits tailored for your workspace.</p>
@@ -77,19 +79,6 @@
     <p>&copy; 2024 Shortomation. All rights reserved.</p>
   </footer>
   <script async src="https://substack.com/embedjs/embed.js" charset="utf-8"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const fadeEls = document.querySelectorAll('.fade-in-on-scroll');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-on-scroll--visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      fadeEls.forEach(el => observer.observe(el));
-    });
-  </script>
+  <script src="animations.js"></script>
 </body>
 </html> 
