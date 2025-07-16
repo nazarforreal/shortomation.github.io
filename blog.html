@@ -9,7 +9,12 @@
 <body>
   <nav class="nav">
     <div class="nav__brand"><img src="logo transparent small.png" alt="Shortomation Logo" class="nav__logo">Shortomation</div>
-    <ul class="nav__links">
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav__links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="https://nazarzhmurko.gumroad.com" target="_blank">Shortcuts</a></li>
@@ -42,5 +47,15 @@
     <p>&copy; 2024 Shortomation. All rights reserved.</p>
   </footer>
   <script src="animations.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
 </body>
 </html> 
