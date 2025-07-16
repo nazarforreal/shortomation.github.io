@@ -292,6 +292,17 @@ body {
   align-self: flex-end;
 }
 
+.section p,
+.section h2,
+.section h3 {
+  margin-bottom: 1.25rem;
+}
+.btn,
+.card__link,
+.section a.btn {
+  margin-top: 1rem;
+}
+
 @media (max-width: 800px) {
   .section--featured .cards {
     flex-direction: column;
