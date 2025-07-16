@@ -40,6 +40,24 @@ body {
   margin-right: auto;
 }
 
+.pane-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+.pane-row > .pane {
+  flex: 1 1 300px;
+  min-width: 220px;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .pane-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
