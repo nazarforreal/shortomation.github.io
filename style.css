@@ -6,7 +6,7 @@
 }
 :root {
   --color-primary: #2d6cdf;
-  --color-secondary: #f5a623;
+  --color-secondary: #6c7a89; /* replaced yellow with a neutral blue-gray */
   --color-bg: #fff;
   --color-text: #222;
   --color-muted: #f7f7f7;
@@ -140,7 +140,7 @@ body {
   color: #fff;
 }
 .btn--secondary:hover {
-  background: #c97c0a;
+  background: #49525c;
 }
 
 .main {
