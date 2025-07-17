@@ -599,3 +599,50 @@ img, iframe {
     padding-bottom: 20vw;
   }
 } 
+
+.cards--row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards--row .card {
+  min-width: 220px;
+  max-width: 300px;
+  flex: 1 1 220px;
+  min-height: 340px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+.cards--row .card p {
+  margin-bottom: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: clip;
+  display: block;
+  white-space: normal;
+}
+.cards--row .card img {
+  margin-top: auto;
+  margin-bottom: 0;
+  height: 120px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 900px) {
+  .cards--row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .cards--row .card {
+    max-width: 100%;
+    min-width: 0;
+  }
+} 
