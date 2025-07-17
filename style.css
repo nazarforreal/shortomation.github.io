@@ -587,3 +587,15 @@ img, iframe {
   border-radius: 24px;
   position: relative;
 } 
+
+.pane--courses .section--courses {
+  padding-right: 200px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 700px) {
+  .pane--courses .section--courses {
+    padding-right: 20vw;
+    padding-bottom: 20vw;
+  }
+} 
