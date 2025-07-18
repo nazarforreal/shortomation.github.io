@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "handy-apps.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -171,13 +171,13 @@
   "active": "cf5ca3b348418037",
   "lastOpenFiles": [
     "handy-apps-1.PNG",
+    "handy-apps.md",
     "handy.PNG",
     "Tuesday, 14 Jan 2025 11_34_02.PNG",
     "handy-apps-1.gif",
     "handy-apps-1.webp",
     "post3.md",
     "post2.md",
-    "post1.md",
-    "handy-apps.md"
+    "post1.md"
   ]
 }
