@@ -1,22 +1,6 @@
-{
-  "posts": [
-    {
-      "slug": "post1",
-      "title": "Automating Notion with Siri Shortcuts",
-      "date": "2024-07-20",
-      "excerpt": "Learn how to connect Notion and Siri Shortcuts for powerful automations."
-    },
-    {
-      "slug": "post2",
-      "title": "Top Notion Automation Ideas for Beginners",
-      "date": "2024-07-18",
-      "excerpt": "A roundup of easy automation ideas to get started with Notion."
-    },
-    {
-      "slug": "post3",
-      "title": "Reusable shortcuts for Notion",
+{"posts": [{"slug":"post1","title":"Automating Notion with Siri Shortcuts","excerpt":"Learn how to connect Notion and Siri Shortcuts for powerful automations.","date":"2024-07-20"},{"slug":"post2","title":"Top Notion Automation Ideas for Beginners","excerpt":"A roundup of easy automation ideas to get started with Notion.","date":"2024-07-18"},{"slug":"post3","title":"Reusable shortcuts for Notion","excerpt":"Explore the way to speed the shortcut creation process.","date":"2025-07-18"},{
+      "slug": "handy-apps",
+      "title": "Apps that simplify my shortcuts development process",
       "date": "2025-07-18",
-      "excerpt": "Explore the way to speed the shortcut creation process."
-    }
-  ]
-} 
+      "excerpt": "Some handy utilities for shortcuts development"
+    }]}
