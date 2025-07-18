@@ -61,7 +61,8 @@
     // Blog posts list rendering
     fetch('/assets/posts.json')
       .then(response => response.json())
-      .then(posts => {
+      .then(data => {
+        const posts = data.posts;
         const container = document.getElementById('posts-list');
         if (!posts.length) {
           container.innerHTML = `<div class='card fade-in' style='min-width:220px; max-width:400px; margin:0 auto; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef;'><p style='font-size:1.1rem; color:#555; margin:0;'>No posts yet. Check back soon!</p></div>`;
