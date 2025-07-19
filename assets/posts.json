@@ -1,6 +1,25 @@
-{"posts": [
-  {"slug":"post1","title":"Automating Notion with Siri Shortcuts","excerpt":"Learn how to connect Notion and Siri Shortcuts for powerful automations.","date":"2024-07-20","thumbnail":null},
-  {"slug":"post2","title":"Top Notion Automation Ideas for Beginners","excerpt":"A roundup of easy automation ideas to get started with Notion.","date":"2024-07-18","thumbnail":null},
-  {"slug":"post3","title":"Reusable shortcuts for Notion","excerpt":"Explore the way to speed the shortcut creation process.","date":"2025-07-18","thumbnail":null},
-  {"slug": "handy-apps","title": "Apps that simplify my shortcuts development process","date": "2025-07-18","excerpt": "Some handy utilities for shortcuts development","thumbnail": "/assets/posts/handy-apps-1.png"}
-]}
+{
+  "posts": [
+    {
+      "slug": "post2",
+      "title": "Top Notion Automation Ideas for Beginners",
+      "excerpt": "A roundup of easy automation ideas to get started with Notion.",
+      "date": "2024-07-18",
+      "thumbnail": null
+    },
+    {
+      "slug": "post3",
+      "title": "Reusable shortcuts for Notion",
+      "excerpt": "Explore the way to speed the shortcut creation process.",
+      "date": "2025-07-18",
+      "thumbnail": null
+    },
+    {
+      "slug": "handy-apps",
+      "title": "Apps that simplify my shortcuts development process",
+      "date": "2025-07-18",
+      "excerpt": "Some handy utilities for shortcuts development",
+      "thumbnail": "/assets/posts/handy-apps-1.png"
+    }
+  ]
+}
