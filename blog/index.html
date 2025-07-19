@@ -62,17 +62,22 @@
     fetch('/assets/posts.json')
       .then(response => response.json())
       .then(data => {
-        const posts = data.posts;
+        let posts = data.posts.slice();
+        // Sort posts by date descending
+        posts.sort((a, b) => new Date(b.date) - new Date(a.date));
         const container = document.getElementById('posts-list');
         if (!posts.length) {
           container.innerHTML = `<div class='card fade-in' style='min-width:220px; max-width:400px; margin:0 auto; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef;'><p style='font-size:1.1rem; color:#555; margin:0;'>No posts yet. Check back soon!</p></div>`;
           return;
         }
         container.innerHTML = posts.map(post => `
-          <a href="/blog/${post.slug}/" class="card fade-in card--nav" style="text-decoration:none; color:inherit; min-width:220px; max-width:400px; margin:0 1rem 2rem 1rem; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:block;">
-            <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600;">${post.title}</h3>
-            <div style="color:#888; font-size:0.98rem; margin-bottom:0.7rem;">${new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</div>
-            <p style="font-size:1.08rem; color:#444; margin-bottom:0;">${post.excerpt}</p>
+          <a href="/blog/${post.slug}/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; margin:0 1rem 2rem 1rem; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:space-between; height:380px;">
+            <div style="flex:1 1 auto; display:flex; flex-direction:column; justify-content:flex-start;">
+              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.2; max-height:2.6em; overflow:hidden; text-overflow:ellipsis;">${post.title}</h3>
+              <div style="color:#888; font-size:0.98rem; margin-bottom:0.7rem;">${new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.4; max-height:3.2em; overflow:hidden; text-overflow:ellipsis;">${post.excerpt}</p>
+            </div>
+            ${post.thumbnail ? `<img src="${post.thumbnail}" alt="${post.title} thumbnail" class="post-thumbnail" style="margin-top:1.2rem; border-radius:14px; width:100%; max-width:320px; height:80px; object-fit:cover; align-self:center; background:#f7f7f7; box-shadow:0 1px 4px rgba(0,0,0,0.04);" loading="lazy">` : `<div style="height:80px; margin-top:1.2rem;"></div>`}
           </a>
         `).join('');
       });
