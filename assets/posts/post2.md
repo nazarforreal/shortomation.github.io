@@ -1,5 +1,3 @@
-# Top Notion Automation Ideas for Beginners
-
 Notion is even more powerful when you automate it! Here are some easy ideas to get started:
 
 1. Automatically archive completed tasks
