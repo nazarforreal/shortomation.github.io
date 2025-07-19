@@ -5,5 +5,3 @@ Unlock the power of Notion by integrating it with Siri Shortcuts! In this post, 
 - Connect Notion API to Siri Shortcuts
 - Automate daily notes and tasks
 - Use voice commands to add content to Notion
-
-**Get started today and supercharge your productivity!** 
