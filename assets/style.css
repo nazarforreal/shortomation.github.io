@@ -710,3 +710,9 @@ img, iframe {
     border-radius: 12px;
   }
 } 
+
+.pane--post {
+  max-width: 1200px;
+  padding: 3rem 2.5rem;
+  /* Add more custom styles for blog post panes here if needed */
+} 
