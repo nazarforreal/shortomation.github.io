@@ -1,0 +1,184 @@
+{
+  "main": {
+    "id": "bb413794759cf787",
+    "type": "split",
+    "children": [
+      {
+        "id": "9b4e9f6dd112c6dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2767f729bc797f5a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "74f6aadbdaeab416",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "9f579dee2f84adb3",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "81d24bf0bc110bb7",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "1f40385730970581",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "9f71e89e37f99af3",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "125e0f34f645b8fe",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "4ecf3a7b532e69a7",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "94f9a7b722d5191a",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "4c4060962fa480cf",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      },
+      {
+        "id": "691ea29aa9277fa8",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {},
+          "icon": "lucide-file",
+          "title": "Plugin no longer active"
+        }
+      }
+    ],
+    "currentTab": 3
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "2767f729bc797f5a",
+  "lastOpenFiles": [
+    "remote-blog/assets/avatar youtube.png",
+    "remote-blog/assets/logo transparent.png",
+    "remote-blog/assets/about2.png",
+    "remote-blog/assets/about1.png",
+    "remote-blog/assets/sitemap.xml",
+    "remote-blog/assets/posts.json",
+    "remote-blog/assets/marked.min.js",
+    "remote-blog/assets/style.css",
+    "remote-blog/assets/course-demo1.png",
+    "remote-blog/assets/blog.png",
+    "remote-blog/assets/made for notion.png",
+    "remote-blog/assets/animations.js",
+    "remote-blog/assets/logo transparent small.png",
+    "remote-blog/assets/services1.png",
+    "remote-blog/assets/website.png",
+    "remote-blog/assets/courseimage.png",
+    "remote-blog/assets/posts",
+    "remote-blog/assets/favicon.ico",
+    "remote-blog/assets",
+    "remote-blog/consulting/index.html",
+    "remote-blog/consulting"
+  ]
+}
