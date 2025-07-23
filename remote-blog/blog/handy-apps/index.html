@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps that simplify my shortcuts development process</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo" class="nav__logo">Shortomation</div>
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="https://nazarzhmurko.gumroad.com" target="_blank">Shortcuts</a></li>
+      <li><a href="/courses/">Courses</a></li>
+      <li><a href="/consulting/">Consulting</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </nav>
+  <main class="main fade-in">
+    <div class="pane pane--post" style="max-width:700px; margin:2rem auto;">
+      <h1 id="post-title" style="margin-bottom:0.5rem;">Apps that simplify my shortcuts development process</h1>
+      <p id="post-date" style="color:#888; font-size:1rem; margin-bottom:2rem;">2025-07-18</p>
+      <div id="post-content" class="fade-in"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 Shortomation. All rights reserved.</p>
+  </footer>
+  <script src="/assets/marked.min.js"></script>
+  <script>
+    fetch('/assets/posts/handy-apps.md')
+      .then(response => response.text())
+      .then(md => {
+        document.getElementById('post-content').innerHTML = marked.parse(md);
+      });
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
+</body>
+</html>

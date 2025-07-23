@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4WX613EPK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K4WX613EPK');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortomation - Consulting</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo" class="nav__logo">Shortomation</div>
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="../blog/">Blog</a></li>
+      <li><a href="https://nazarzhmurko.gumroad.com" target="_blank">Shortcuts</a></li>
+      <li><a href="../courses/">Courses</a></li>
+      <li><a href="../consulting/">Consulting</a></li>
+      <li><a href="../about/">About</a></li>
+    </ul>
+  </nav>
+  <header class="hero fade-in">
+    <img src="/assets/logo transparent.png" alt="Shortomation Logo" class="hero__brand-attribute">
+    <h1 class="hero__title">Consulting</h1>
+    <p class="hero__subtitle">Personalized Notion shortcut kits for your unique workspace.</p>
+  </header>
+  <main class="main fade-in">
+    <div class="pane fade-in" style="text-align:center;">
+      <section class="section section--cards-row">
+        <h2 style="font-size:2.2rem; font-weight:700; margin-bottom:1.5rem;">How I Can Help</h2>
+        <div class="cards cards--row" style="display:flex; gap:2rem; flex-wrap:wrap; justify-content:center; align-items:stretch;">
+          <div class="card fade-in card--nav" style="text-decoration:none; color:inherit; min-width:300px; max-width:420px; min-height:420px; flex:1 1 300px; display:flex; flex-direction:column; align-items:center; justify-content:space-between;">
+            <img src="/assets/services1.png" alt="Personalized Notion shortcut kits" style="width:100%; max-width:160px; margin:1rem auto 0.5rem auto; display:block; border-radius:12px; background:#f7f7f7;">
+            <h3 style="margin-top:0.5rem; margin-bottom:0.5rem;">Personalized Notion Shortcut Kits</h3>
+            <p style="margin-bottom:0;">I offer consulting services to create custom Notion shortcut kits tailored to your specific workflows.</p>
+          </div>
+          <div class="card fade-in card--nav" style="text-decoration:none; color:inherit; min-width:300px; max-width:420px; min-height:420px; flex:1 1 300px; display:flex; flex-direction:column; align-items:center; justify-content:space-between;">
+            <img src="/assets/services2.png" alt="1:1 coaching and support" style="width:100%; max-width:160px; margin:1rem auto 0.5rem auto; display:block; border-radius:12px; background:#f7f7f7;">
+            <h3 style="margin-top:0.5rem; margin-bottom:0.5rem;">1:1 Coaching &amp; Support</h3>
+            <p style="margin-bottom:0;">Get personalized coaching and support to optimize your Notion workspace and workflows.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="pane fade-in" style="text-align:center; margin-top:2.5rem;">
+      <section class="section section--contact">
+        <h2 style="font-size:2.2rem; font-weight:700; margin-bottom:1.5rem;">Contact Me</h2>
+        <a href="https://forms.fillout.com/t/iEnwZ1fRnnus?description=xxxxx" class="btn btn--primary" target="_blank" style="display:inline-block; margin:0 auto;">Book an appointment</a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 Shortomation. All rights reserved.</p>
+  </footer>
+  <script src="/assets/animations.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
+</body>
+</html> 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4WX613EPK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K4WX613EPK');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortomation - Blog</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo" class="nav__logo">Shortomation</div>
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="../blog/">Blog</a></li>
+      <li><a href="https://nazarzhmurko.gumroad.com" target="_blank">Shortcuts</a></li>
+      <li><a href="../courses/">Courses</a></li>
+      <li><a href="../consulting/">Consulting</a></li>
+      <li><a href="../about/">About</a></li>
+    </ul>
+  </nav>
+  <header class="hero fade-in">
+    <img src="/assets/logo transparent.png" alt="Shortomation Logo" class="hero__brand-attribute">
+    <h1 class="hero__title">Blog</h1>
+    <p class="hero__subtitle">Insights, tips, and updates on Notion shortcuts and productivity.</p>
+  </header>
+  <main class="main fade-in">
+    <div class="pane fade-in" style="text-align:center;">
+      <section class="section section--posts">
+        <h2 style="font-size:2.2rem; font-weight:700; margin-bottom:1.5rem;">Latest</h2>
+        <div class="cards cards--row" id="posts-list" style="display:flex; justify-content:center;"></div>
+      </section>
+    </div>
+    <div class="pane fade-in" style="text-align:center; margin-top:2.5rem;">
+      <section class="section section--newsletter">
+        <h2 style="min-height:2.5em;">Join My Substack Newsletter</h2>
+        <p style="min-height:3.5em;">Get the latest Notion shortcuts, kits, and updates straight to your inbox.</p>
+        <iframe src="https://nazarshortcuts.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2024 Shortomation. All rights reserved.</p>
+  </footer>
+  <script src="/assets/animations.js"></script>
+  <script>
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // Blog posts list rendering
+    fetch('/assets/posts.json')
+      .then(response => response.json())
+      .then(data => {
+        let posts = data.posts.slice();
+        // Sort posts by date descending
+        posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+        const container = document.getElementById('posts-list');
+        if (!posts.length) {
+          container.innerHTML = `<div class='card fade-in' style='min-width:220px; max-width:400px; margin:0 auto; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef;'><p style='font-size:1.1rem; color:#555; margin:0;'>No posts yet. Check back soon!</p></div>`;
+          return;
+        }
+        container.innerHTML = posts.map(post => `
+          <a href="/blog/${post.slug}/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; margin:0 1rem 2rem 1rem; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:space-between; height:380px;">
+            <div style="flex:1 1 auto; display:flex; flex-direction:column; justify-content:flex-start;">
+              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.2; max-height:2.6em; overflow:hidden; text-overflow:ellipsis;">${post.title}</h3>
+              <div style="color:#888; font-size:0.98rem; margin-bottom:0.7rem;">${new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</div>
+              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.4; max-height:3.2em; overflow:hidden; text-overflow:ellipsis;">${post.excerpt}</p>
+            </div>
+            ${post.thumbnail ? `<img src="${post.thumbnail}" alt="${post.title} thumbnail" class="post-thumbnail" style="margin-top:1.2rem; border-radius:14px; width:100%; max-width:320px; height:80px; object-fit:cover; align-self:center; background:#f7f7f7; box-shadow:0 1px 4px rgba(0,0,0,0.04);" loading="lazy">` : `<div style="height:80px; margin-top:1.2rem;"></div>`}
+          </a>
+        `).join('');
+      });
+  </script>
+</body>
+</html> 
