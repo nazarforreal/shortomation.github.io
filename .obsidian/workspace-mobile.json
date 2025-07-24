@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9b4e9f6dd112c6dd",
+        "id": "e4e0010f29f18d32",
         "type": "tabs",
         "children": [
           {
-            "id": "2767f729bc797f5a",
+            "id": "c8ebffda484776eb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "remote-blog/assets/posts/handy-apps.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "handy-apps"
+              "title": "New tab"
             }
           }
         ]
@@ -161,8 +157,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2767f729bc797f5a",
+  "active": "c8ebffda484776eb",
   "lastOpenFiles": [
+    "assets/posts/handy-apps.md",
+    "remote-blog/assets/posts/handy-apps.md",
     "remote-blog/assets/avatar youtube.png",
     "remote-blog/assets/logo transparent.png",
     "remote-blog/assets/about2.png",
@@ -178,7 +176,6 @@
     "remote-blog/assets/logo transparent small.png",
     "remote-blog/assets/services1.png",
     "remote-blog/assets/website.png",
-    "remote-blog/assets/courseimage.png",
     "remote-blog/assets/posts",
     "remote-blog/assets/favicon.ico",
     "remote-blog/assets",
