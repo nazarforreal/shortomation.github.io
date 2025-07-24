@@ -1,68 +1,55 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="Content-Style-Type" content="text/css">
-<title></title>
-<meta name="Generator" content="Cocoa HTML Writer">
-<style type="text/css">
-p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000}
-span.s1 {font-family: 'Helvetica'; font-weight: normal; font-style: normal; font-size: 12.00px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contextual Awareness in Siri Shortcuts</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="icon" href="/assets/favicon.png" type="image/png">
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;title&gt;Contextual Awareness in Shortcuts&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;link rel="stylesheet" href="/assets/style.css"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;link rel="icon" href="/assets/favicon.png" type="image/png"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;nav class="nav"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="nav__brand"&gt;&lt;img src="/assets/logo transparent small.png" alt="Shortomation Logo"</span></p>
-<p class="p1"><span class="s1">class="nav__logo"&gt;Shortomation&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="hamburger" id="hamburger-menu"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;span&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;span&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;span&gt;&lt;/span&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;ul class="nav__links" id="nav-links"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="/blog/"&gt;Blog&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="https://nazarzhmurko.gumroad.com" target="_blank"&gt;Shortcuts&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="/courses/"&gt;Courses&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="/consulting/"&gt;Consulting&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;li&gt;&lt;a href="/about/"&gt;About&lt;/a&gt;&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/nav&gt;</span></p>
-<p class="p1"><span class="s1">&lt;main class="main fade-in"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div class="pane fade-in" style="max-width:700px; margin:2rem auto;"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h1 id="post-title" style="margin-bottom:0.5rem;"&gt;Contextual Awareness in Shortcuts&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p id="post-date" style="color:#888; font-size:1rem; margin-bottom:2rem;"&gt;2025-07-24&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div id="post-content" class="fade-in"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/main&gt;</span></p>
-<p class="p1"><span class="s1">&lt;footer class="footer"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;&amp;copy; 2025 Shortomation. All rights reserved.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/footer&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script src="/assets/marked.min.js"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1">fetch('/assets/posts/contextual-awareness.md')</span></p>
-<p class="p1"><span class="s1">.then(response =&gt; response.text())</span></p>
-<p class="p1"><span class="s1">.then(md =&gt; {</span></p>
-<p class="p1"><span class="s1">document.getElementById('post-content').innerHTML = marked.parse(md);</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">// Hamburger menu</span></p>
-<p class="p1"><span class="s1">const hamburger = document.getElementById('hamburger-menu');</span></p>
-<p class="p1"><span class="s1">const navLinks = document.getElementById('nav-links');</span></p>
-<p class="p1"><span class="s1">hamburger.addEventListener('click', () =&gt; {</span></p>
-<p class="p1"><span class="s1">navLinks.classList.toggle('open');</span></p>
-<p class="p1"><span class="s1">});</span></p>
-<p class="p1"><span class="s1">navLinks.querySelectorAll('a').forEach(link =&gt; {</span></p>
-<p class="p1"><span class="s1">link.addEventListener('click', () =&gt; navLinks.classList.remove('open'));</span></p>
-<p class="p1"><span class="s1">});</span></p>
+  <nav class="nav">
+    <div class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo" class="nav__logo">Shortomation</div>
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="https://nazarzhmurko.gumroad.com" target="_blank">Shortcuts</a></li>
+      <li><a href="/courses/">Courses</a></li>
+      <li><a href="/consulting/">Consulting</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </nav>
+  <main class="main fade-in">
+    <div class="pane fade-in" style="max-width:700px; margin:2rem auto;">
+      <h1 id="post-title" style="margin-bottom:0.5rem;">Contextual Awareness in Siri Shortcuts</h1>
+      <p id="post-date" style="color:#888; font-size:1rem; margin-bottom:2rem;">2025-07-24</p>
+      <div id="post-content" class="fade-in"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 Shortomation. All rights reserved.</p>
+  </footer>
+  <script src="/assets/marked.min.js"></script>
+  <script>
+    fetch('/assets/posts/contextual-awareness.md')
+      .then(response => response.text())
+      .then(md => {
+        document.getElementById('post-content').innerHTML = marked.parse(md);
+      });
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger-menu');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
 </body>
 </html>
