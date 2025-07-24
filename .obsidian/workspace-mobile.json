@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "df5e00666cb68d0d",
+        "id": "ce237552502b7b74",
         "type": "tabs",
         "children": [
           {
-            "id": "343fc1ad7cb01573",
+            "id": "9fa3b68f368baab5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "assets/posts/contextual-awareness.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "contextual-awareness"
             }
           }
         ]
@@ -157,8 +161,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "343fc1ad7cb01573",
+  "active": "9fa3b68f368baab5",
   "lastOpenFiles": [
+    "blog/contextual-awareness/index.html",
+    "blog/contextual-awareness",
     "assets/posts/handy-apps.md",
     "assets/posts/handy-apps-1.png",
     "remote-blog/assets/posts/handy-apps.md",
@@ -179,7 +185,6 @@
     "remote-blog/assets/posts",
     "remote-blog/assets/favicon.ico",
     "remote-blog/assets",
-    "remote-blog/consulting/index.html",
-    "remote-blog/consulting"
+    "remote-blog/consulting/index.html"
   ]
 }
