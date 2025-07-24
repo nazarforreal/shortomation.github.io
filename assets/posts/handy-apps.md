@@ -12,6 +12,7 @@ This is the demo of me using the **Contextual Shortcut** that based on the curre
 The title of [this app](https://apps.apple.com/ua/app/data-jar/id1453273600) metaphorically explains its philosophy. It stores data accessible in any shortcut by calling out the assigned title. Using it, I can quickly get the API key for Notion or ChatGPT and not expose it in demonstrations at the same time.
 ![jar-2.png](/assets/posts/jar-2.png)
 
-Keep automating!
+Tried these out? Let me know how it fits into your workflow—or how you bent it to your will.
 
+Keep automating!
 Nazar
