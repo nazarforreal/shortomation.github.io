@@ -714,5 +714,9 @@ img, iframe {
 .pane--post {
   max-width: 1200px;
   padding: 3rem 2.5rem;
+  line-height: 1.7;
+  font-size: 1.125rem;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.05);
+
   /* Add more custom styles for blog post panes here if needed */
 } 
