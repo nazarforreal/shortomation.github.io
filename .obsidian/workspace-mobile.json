@@ -11,10 +11,14 @@
             "id": "c8ebffda484776eb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "assets/posts/handy-apps.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "handy-apps"
             }
           }
         ]
@@ -159,6 +163,7 @@
   },
   "active": "c8ebffda484776eb",
   "lastOpenFiles": [
+    "assets/posts/handy-apps-1.png",
     "assets/posts/handy-apps.md",
     "remote-blog/assets/posts/handy-apps.md",
     "remote-blog/assets/avatar youtube.png",
