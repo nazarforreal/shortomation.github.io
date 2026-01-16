@@ -1431,3 +1431,120 @@ iframe {
     padding: 0.8rem 1.25rem;
   }
 }
+
+/* ========================================= */
+/* Product Gallery Styles                    */
+/* ========================================= */
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  justify-items: center;
+}
+
+.product-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0.2, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 400px;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+}
+
+.product-card__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.product-card__content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.product-card__content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-secondary);
+  margin-bottom: 0;
+}
+
+.product-card__embed {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Payhip embed styling */
+.product-card__embed .payhip-embed-page {
+  width: 100%;
+  min-height: 300px;
+}
+
+/* Alternative button styling */
+.product-card__embed .btn {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Responsive Grid */
+@media (max-width: 900px) {
+  .product-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-gallery {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .product-card__image {
+    height: 200px;
+  }
+
+  .product-card__content {
+    padding: 1.25rem;
+  }
+
+  .product-card__embed {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
+/* Center last product if it's alone in a row */
+@media (min-width: 901px) {
+  .product-card:last-child:nth-child(3n+1) {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .product-card:last-child:nth-child(2n+1) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    max-width: 50%;
+  }
+}
