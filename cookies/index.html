@@ -54,17 +54,20 @@
 
 <body>
     <nav class="nav">
-        <div class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo"
-                class="nav__logo">Shortomation</div>
-        <div class="hamburger" id="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
+        <a href="/" class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo"
+                class="nav__logo">Shortomation</a>
+        <div style="display: flex; align-items: center;">
+            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
         <ul class="nav__links" id="nav-links">
             <li><a href="/">Home</a></li>
             <li><a href="../blog/">Blog</a></li>
-            <li><a href="/shortcuts/" target="_blank">Shortcuts</a></li>
+            <li><a href="/shortcuts/">Shortcuts</a></li>
             <li><a href="../courses/">Courses</a></li>
             <li><a href="../consulting/">Consulting</a></li>
             <li><a href="../about/">About</a></li>
@@ -153,20 +156,23 @@
                     <div class="footer__social-links">
                         <a href="http://threads.com/@notionshortcuts" target="_blank" rel="noopener noreferrer"
                             class="footer__social-link">
-                            <span class="footer__social-icon">🧵</span>
                             Threads
                         </a>
                         <a href="https://youtube.com/@nazarshortcuts" target="_blank" rel="noopener noreferrer"
                             class="footer__social-link">
-                            <span class="footer__social-icon">▶️</span>
                             YouTube
                         </a>
                         <a href="https://www.linkedin.com/in/nazar-zhmurko" target="_blank" rel="noopener noreferrer"
                             class="footer__social-link">
-                            <span class="footer__social-icon">💼</span>
                             LinkedIn
                         </a>
                     </div>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">
+                        <a href="mailto:support@nazarzhmurko.com"
+                            style="color: #e0e0e0; text-decoration: none; transition: color 0.3s ease;">
+                            📧 support@nazarzhmurko.com
+                        </a>
+                    </p>
                 </div>
             </div>
 
@@ -180,6 +186,7 @@
             </div>
         </div>
     </footer>
+    <script src="/assets/dark-mode.js"></script>
     <script src="/assets/animations.js"></script>
     <script>
         const hamburger = document.getElementById('hamburger-menu');

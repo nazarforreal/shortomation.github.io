@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +15,18 @@
   <meta name="theme-color" content="#2d6cdf">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
+
 <body>
   <nav class="nav">
-    <div class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo" class="nav__logo">Shortomation</div>
-    <div class="hamburger" id="hamburger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
+    <a href="/" class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo"
+        class="nav__logo">Shortomation</a>
+    <div style="display: flex; align-items: center;">
+      <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <ul class="nav__links" id="nav-links">
       <li><a href="/">Home</a></li>
@@ -49,7 +55,7 @@
           </div>
           <p class="footer__tagline">Shortcuts, Kits, Courses, and Consulting for Notion Power Users</p>
         </div>
-        
+
         <!-- Quick Links Column -->
         <div class="footer__column">
           <h3>Quick Links</h3>
@@ -61,27 +67,33 @@
             <li><a href="/about/">About</a></li>
           </ul>
         </div>
-        
+
         <!-- Connect Column -->
         <div class="footer__column footer__social">
           <h3>Connect</h3>
           <div class="footer__social-links">
-            <a href="http://threads.com/@notionshortcuts" target="_blank" rel="noopener noreferrer" class="footer__social-link">
-              <span class="footer__social-icon">🧵</span>
+            <a href="http://threads.com/@notionshortcuts" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link">
               Threads
             </a>
-            <a href="https://youtube.com/@nazarshortcuts" target="_blank" rel="noopener noreferrer" class="footer__social-link">
-              <span class="footer__social-icon">▶️</span>
+            <a href="https://youtube.com/@nazarshortcuts" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link">
               YouTube
             </a>
-            <a href="https://www.linkedin.com/in/nazar-zhmurko" target="_blank" rel="noopener noreferrer" class="footer__social-link">
-              <span class="footer__social-icon">💼</span>
+            <a href="https://www.linkedin.com/in/nazar-zhmurko" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link">
               LinkedIn
             </a>
           </div>
+          <p style="margin-top: 1rem; font-size: 0.9rem;">
+            <a href="mailto:support@nazarzhmurko.com"
+              style="color: #e0e0e0; text-decoration: none; transition: color 0.3s ease;">
+              📧 support@nazarzhmurko.com
+            </a>
+          </p>
         </div>
       </div>
-      
+
       <!-- Footer Bottom -->
       <div class="footer__bottom">
         <p class="footer__copyright">&copy; 2025 Shortomation. All rights reserved.</p>
@@ -92,6 +104,7 @@
       </div>
     </div>
   </footer>
+  <script src="/assets/dark-mode.js"></script>
   <script src="/assets/marked.min.js"></script>
   <script>
     fetch('/assets/posts/post3.md')
@@ -109,14 +122,15 @@
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
   </script>
-  
+
   <!-- Cookie Consent Banner -->
   <div id="cookie-consent-banner" class="cookie-consent">
     <div class="cookie-consent__container">
       <div class="cookie-consent__content">
         <h3 class="cookie-consent__title">🍪 We use cookies</h3>
         <p class="cookie-consent__text">
-          We use cookies to analyze site traffic and improve your experience. By clicking "Accept", you consent to our use of cookies for analytics.
+          We use cookies to analyze site traffic and improve your experience. By clicking "Accept", you consent to our
+          use of cookies for analytics.
         </p>
       </div>
       <div class="cookie-consent__actions">
@@ -128,4 +142,5 @@
   <script src="/assets/cookie-consent.js"></script>
 
 </body>
+
 </html>

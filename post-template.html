@@ -18,12 +18,15 @@
 
 <body>
   <nav class="nav">
-    <div class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo"
-        class="nav__logo">Shortomation</div>
-    <div class="hamburger" id="hamburger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
+    <a href="/" class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo"
+        class="nav__logo">Shortomation</a>
+    <div style="display: flex; align-items: center;">
+      <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <ul class="nav__links" id="nav-links">
       <li><a href="/">Home</a></li>
@@ -52,7 +55,7 @@
           </div>
           <p class="footer__tagline">Shortcuts, Kits, Courses, and Consulting for Notion Power Users</p>
         </div>
-        
+
         <!-- Quick Links Column -->
         <div class="footer__column">
           <h3>Quick Links</h3>
@@ -64,27 +67,33 @@
             <li><a href="/about/">About</a></li>
           </ul>
         </div>
-        
+
         <!-- Connect Column -->
         <div class="footer__column footer__social">
           <h3>Connect</h3>
           <div class="footer__social-links">
-            <a href="http://threads.com/@notionshortcuts" target="_blank" rel="noopener noreferrer" class="footer__social-link">
-              <span class="footer__social-icon">🧵</span>
+            <a href="http://threads.com/@notionshortcuts" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link">
               Threads
             </a>
-            <a href="https://youtube.com/@nazarshortcuts" target="_blank" rel="noopener noreferrer" class="footer__social-link">
-              <span class="footer__social-icon">▶️</span>
+            <a href="https://youtube.com/@nazarshortcuts" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link">
               YouTube
             </a>
-            <a href="https://www.linkedin.com/in/nazar-zhmurko" target="_blank" rel="noopener noreferrer" class="footer__social-link">
-              <span class="footer__social-icon">💼</span>
+            <a href="https://www.linkedin.com/in/nazar-zhmurko" target="_blank" rel="noopener noreferrer"
+              class="footer__social-link">
               LinkedIn
             </a>
           </div>
+          <p style="margin-top: 1rem; font-size: 0.9rem;">
+            <a href="mailto:support@nazarzhmurko.com"
+              style="color: #e0e0e0; text-decoration: none; transition: color 0.3s ease;">
+              📧 support@nazarzhmurko.com
+            </a>
+          </p>
         </div>
       </div>
-      
+
       <!-- Footer Bottom -->
       <div class="footer__bottom">
         <p class="footer__copyright">&copy; 2025 Shortomation. All rights reserved.</p>
@@ -95,6 +104,7 @@
       </div>
     </div>
   </footer>
+  <script src="/assets/dark-mode.js"></script>
   <script src="/assets/marked.min.js"></script>
   <script>
     fetch('/assets/posts/{{slug}}.md')
