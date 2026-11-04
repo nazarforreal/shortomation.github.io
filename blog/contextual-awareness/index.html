@@ -4,7 +4,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contextual Awareness in Siri Shortcuts</title>
+  <title>Contextual Awareness in Shortcuts – Shortomation</title>
+  <meta name="description" content="Learn how to supercharge your Shortcuts even more">
+  <link rel="canonical" href="https://nazarzhmurko.com/blog/contextual-awareness/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Shortomation">
+  <meta property="og:url" content="https://nazarzhmurko.com/blog/contextual-awareness/">
+  <meta property="og:title" content="Contextual Awareness in Shortcuts">
+  <meta property="og:description" content="Learn how to supercharge your Shortcuts even more">
+  <meta property="og:image" content="https://nazarzhmurko.com/assets/logo%20transparent.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="article:published_time" content="2025-07-24">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nazarzhmurko.com/#organization",
+      "name": "Shortomation",
+      "url": "https://nazarzhmurko.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nazarzhmurko.com/assets/logo%20transparent.png"
+      },
+      "description": "Shortomation makes Apple Shortcuts kits, Notion templates, courses and consulting for Notion power users and teams.",
+      "email": "support@nazarzhmurko.com",
+      "founder": {
+        "@id": "https://nazarzhmurko.com/about/#nazar"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "UA"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/nazar-zhmurko",
+        "https://youtube.com/@nazarshortcuts",
+        "https://www.threads.com/@notionshortcuts",
+        "https://nazarzhmurko.gumroad.com"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nazarzhmurko.com/#website",
+      "url": "https://nazarzhmurko.com/",
+      "name": "Shortomation",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://nazarzhmurko.com/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://nazarzhmurko.com/about/#nazar",
+      "name": "Nazar Zhmurko",
+      "url": "https://nazarzhmurko.com/about/",
+      "image": "https://nazarzhmurko.com/assets/about1.jpg",
+      "jobTitle": "Notion and Apple Shortcuts automation consultant",
+      "worksFor": {
+        "@id": "https://nazarzhmurko.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/nazar-zhmurko",
+        "https://youtube.com/@nazarshortcuts",
+        "https://www.threads.com/@notionshortcuts"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://nazarzhmurko.com/blog/contextual-awareness/#article",
+      "headline": "Contextual Awareness in Shortcuts",
+      "description": "Learn how to supercharge your Shortcuts even more",
+      "datePublished": "2025-07-24",
+      "image": "https://nazarzhmurko.com/assets/logo%20transparent.png",
+      "url": "https://nazarzhmurko.com/blog/contextual-awareness/",
+      "mainEntityOfPage": "https://nazarzhmurko.com/blog/contextual-awareness/",
+      "inLanguage": "en",
+      "author": {
+        "@id": "https://nazarzhmurko.com/about/#nazar"
+      },
+      "publisher": {
+        "@id": "https://nazarzhmurko.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nazarzhmurko.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://nazarzhmurko.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contextual Awareness in Shortcuts",
+          "item": "https://nazarzhmurko.com/blog/contextual-awareness/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
   <!-- Favicon and Web App Manifest -->
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -20,15 +128,15 @@
   <nav class="nav">
     <a href="/" class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo"
         class="nav__logo">Shortomation</a>
-    <div class="hamburger" id="hamburger-menu">
+    <button type="button" class="hamburger" id="hamburger-menu" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
     <ul class="nav__links" id="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="/blog/">Blog</a></li>
-      <li><a href="https://nazarzhmurko.gumroad.com" target="_blank">Shortcuts</a></li>
+      <li><a href="/shortcuts/">Shortcuts</a></li>
       <li><a href="/courses/">Courses</a></li>
       <li><a href="/consulting/">Consulting</a></li>
       <li><a href="/about/">About</a></li>
@@ -36,9 +144,29 @@
   </nav>
   <main class="main fade-in">
     <div class="pane fade-in" style="max-width:700px; margin:2rem auto;">
-      <h1 id="post-title" style="margin-bottom:0.5rem;">Contextual Awareness in Siri Shortcuts</h1>
-      <p id="post-date" style="color:#888; font-size:1rem; margin-bottom:2rem;">2025-07-24</p>
-      <div id="post-content" class="fade-in"></div>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/blog/">Blog</a> <span aria-hidden="true">›</span> <span aria-current="page">Contextual Awareness in Shortcuts</span>
+      </nav>
+      <h1 id="post-title" style="margin-bottom:0.5rem;">Contextual Awareness in Shortcuts</h1>
+      <p id="post-date" class="post-date"><time datetime="2025-07-24">July 24, 2025</time> · Nazar Zhmurko</p>
+      <div id="post-content">
+<h3>What is Contextual Programming?</h3>
+<p>Contextual programming is an approach to software development where the behavior of a program can change depending on the context in which it is executed. This approach allows programs to be more adaptive and responsive to different situations and environments.
+Contextual programming is particularly relevant in areas such as mobile computing, Internet of Things(IoT), and pervasive computing, where the ability to adapt to chaning environments and user needs is crucial.</p>
+<h3>Implementation in Siri Shortcuts</h3>
+<p>The key aspects of contextual programming in Shortcuts are:</p>
+<ol>
+<li><strong>Context Awareness</strong>: The program is aware of its environment, including factors such as location, time of the day, focus mode, device type, etc.</li>
+<li><strong>Dynamic Adaptation</strong>: The program can dynamically adjust its behavior based on the given context. For example, a mobile app might change its interface or functionality depending on the user’s current device context: notion object, application, focus mode, onscreen content, and more.</li>
+<li><strong>Context Sensing</strong>: The use of sensors or data inputs to gather context information. This can include the information gathered from the <strong>Share Sheet</strong>, <strong>Clipboard</strong>, as well as context-providing actions like: <strong>Get Current App</strong>, <strong>Get What’s On Screen</strong>, <strong>Get Current Focus</strong>, <strong>Get Device Details</strong>.</li>
+<li><strong>Context Processing</strong>: This is all about our decision to process the provided contextual data in specific way. For example, it will be crucial to have the shortcut know that in case we have URL in the clipboard, the <strong>Save URL to Notion</strong> shortcut will be executed and the URL will be automatically saved.</li>
+</ol>
+<h3>Building Contextual NotionOS Course Introduction</h3>
+<p><a href="https://youtu.be/T6Sbq2173rk?si=DXX8nazmKKIqMfc7"><img src="" alt="Watch the video"></a></p>
+<p>Keep Automating,
+Nazar</p>
+
+      </div>
     </div>
   </main>
   <footer class="footer">
@@ -59,6 +187,7 @@
           <ul class="footer__links">
             <li><a href="/">Home</a></li>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/shortcuts/">Shortcuts</a></li>
             <li><a href="/courses/">Courses</a></li>
             <li><a href="/consulting/">Consulting</a></li>
             <li><a href="/about/">About</a></li>
@@ -82,18 +211,13 @@
               LinkedIn
             </a>
           </div>
-          <p style="margin-top: 1rem; font-size: 0.9rem;">
-            <a href="mailto:support@nazarzhmurko.com"
-              style="color: #e0e0e0; text-decoration: none; transition: color 0.3s ease;">
-              📧 support@nazarzhmurko.com
-            </a>
-          </p>
+          <p class="footer__email-wrap"><a class="footer__email" href="mailto:support@nazarzhmurko.com">support@nazarzhmurko.com</a></p>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2025 Shortomation. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Shortomation. All rights reserved.</p>
         <ul class="footer__legal">
           <li><a href="/privacy/">Privacy Policy</a></li>
           <li><a href="/cookies/">Cookie Policy</a></li>
@@ -103,11 +227,12 @@
   </footer>
   <script src="/assets/marked.min.js"></script>
   <script>
-    fetch('/assets/posts/contextual-awareness.md')
-      .then(response => response.text())
-      .then(md => {
-        document.getElementById('post-content').innerHTML = marked.parse(md);
-      });
+    const postContent = document.getElementById('post-content');
+    if (!postContent.textContent.trim()) {
+      fetch('/assets/posts/contextual-awareness.md')
+        .then(response => response.text())
+        .then(md => { postContent.innerHTML = marked.parse(md); });
+    }
     // Hamburger menu
     const hamburger = document.getElementById('hamburger-menu');
     const navLinks = document.getElementById('nav-links');
@@ -136,7 +261,7 @@
     </div>
   </div>
   <script src="/assets/cookie-consent.js"></script>
-
+  <script src="/assets/animations.js"></script>
 </body>
 
 </html>

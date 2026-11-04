@@ -1,0 +1,21 @@
+# Shortomation
+
+> Shortomation makes Apple Shortcuts kits, Notion templates, courses and consulting that automate Notion workspaces, for individual power users and teams. Run by Nazar Zhmurko from Ukraine.
+
+## Products and services
+
+- [Shortcut kits](https://nazarzhmurko.com/shortcuts/): ready-made Apple Shortcuts kits for Notion, sold on Gumroad (https://nazarzhmurko.gumroad.com)
+- [Courses](https://nazarzhmurko.com/courses/): "Automate Notion with Siri Shortcuts: Master Notion API + ChatGPT API Integration"
+- [Consulting](https://nazarzhmurko.com/consulting/): custom Notion shortcut kits built for your workflows, and 1:1 coaching and support
+
+## Learn
+
+- [Blog](https://nazarzhmurko.com/blog/): guides on building and debugging Apple Shortcuts for Notion
+
+## About and contact
+
+- [About](https://nazarzhmurko.com/about/): who is behind Shortomation
+- Email: support@nazarzhmurko.com
+- LinkedIn: https://www.linkedin.com/in/nazar-zhmurko
+- YouTube: https://youtube.com/@nazarshortcuts
+- Threads: https://www.threads.com/@notionshortcuts
