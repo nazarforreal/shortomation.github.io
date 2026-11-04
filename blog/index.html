@@ -45,11 +45,11 @@
   <nav class="nav">
     <a href="/" class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo"
         class="nav__logo">Shortomation</a>
-    <div class="hamburger" id="hamburger-menu">
+    <button type="button" class="hamburger" id="hamburger-menu" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
     <ul class="nav__links" id="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="../blog/">Blog</a></li>
@@ -67,14 +67,14 @@
   <main class="main fade-in">
     <div class="pane fade-in" style="text-align:center;">
       <section class="section section--posts">
-        <h2 style="font-size:2.2rem; font-weight:700; margin-bottom:1.5rem;">Latest</h2>
+        <h2>Latest</h2>
         <div class="cards cards--row" id="posts-list" style="display:flex; justify-content:center;"></div>
       </section>
     </div>
     <div class="pane fade-in" style="text-align:center; margin-top:2.5rem;">
       <section class="section section--newsletter">
-        <h2 style="min-height:2.5em;">Join My Substack Newsletter</h2>
-        <p style="min-height:3.5em;">Get the latest Notion shortcuts, kits, and updates straight to your inbox.</p>
+        <h2>Join My Substack Newsletter</h2>
+        <p>Get the latest Notion shortcuts, kits, and updates straight to your inbox.</p>
         <iframe src="https://nazarshortcuts.substack.com/embed" width="480" height="320"
           style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
       </section>
@@ -98,6 +98,7 @@
           <ul class="footer__links">
             <li><a href="/">Home</a></li>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/shortcuts/">Shortcuts</a></li>
             <li><a href="/courses/">Courses</a></li>
             <li><a href="/consulting/">Consulting</a></li>
             <li><a href="/about/">About</a></li>
@@ -121,18 +122,13 @@
               LinkedIn
             </a>
           </div>
-          <p style="margin-top: 1rem; font-size: 0.9rem;">
-            <a href="mailto:support@nazarzhmurko.com"
-              style="color: #e0e0e0; text-decoration: none; transition: color 0.3s ease;">
-              📧 support@nazarzhmurko.com
-            </a>
-          </p>
+          <p class="footer__email-wrap"><a class="footer__email" href="mailto:support@nazarzhmurko.com">support@nazarzhmurko.com</a></p>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2025 Shortomation. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Shortomation. All rights reserved.</p>
         <ul class="footer__legal">
           <li><a href="/privacy/">Privacy Policy</a></li>
           <li><a href="/cookies/">Cookie Policy</a></li>
@@ -164,13 +160,13 @@
           return;
         }
         container.innerHTML = posts.map(post => `
-          <a href="/blog/${post.slug}/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; margin:0 1rem 2rem 1rem; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:space-between; height:380px;">
+          <a href="/blog/${post.slug}/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:flex-start;">
             <div style="flex:1 1 auto; display:flex; flex-direction:column; justify-content:flex-start;">
-              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.2; max-height:2.6em; overflow:hidden; text-overflow:ellipsis;">${post.title}</h3>
+              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.25;">${post.title}</h3>
               <div style="color:#888; font-size:0.98rem; margin-bottom:0.7rem;">${new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</div>
-              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.4; max-height:3.2em; overflow:hidden; text-overflow:ellipsis;">${post.excerpt}</p>
+              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.45;">${post.excerpt}</p>
             </div>
-            ${post.thumbnail ? `<img src="${post.thumbnail}" alt="${post.title} thumbnail" class="post-thumbnail" style="margin-top:1.2rem; border-radius:14px; width:100%; max-width:320px; height:80px; object-fit:cover; align-self:center; background:#f7f7f7; box-shadow:0 1px 4px rgba(0,0,0,0.04);" loading="lazy">` : `<div style="height:80px; margin-top:1.2rem;"></div>`}
+            ${post.thumbnail ? `<img src="${post.thumbnail}" alt="${post.title} thumbnail" class="post-thumbnail" style="margin-top:1.2rem; border-radius:14px; width:100%; max-width:320px; height:140px; object-fit:cover; align-self:center; background:#f7f7f7; box-shadow:0 1px 4px rgba(0,0,0,0.04);" loading="lazy">` : ''}
           </a>
         `).join('');
       });

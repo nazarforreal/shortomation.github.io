@@ -45,11 +45,11 @@
   <nav class="nav">
     <a href="/" class="nav__brand"><img src="/assets/logo transparent small.png" alt="Shortomation Logo"
         class="nav__logo">Shortomation</a>
-    <div class="hamburger" id="hamburger-menu">
+    <button type="button" class="hamburger" id="hamburger-menu" aria-label="Open menu" aria-controls="nav-links" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
     <ul class="nav__links" id="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="../blog/">Blog</a></li>
@@ -67,7 +67,7 @@
   <main class="main fade-in">
     <div class="pane fade-in" style="text-align:center;">
       <section class="section section--cards-row">
-        <h2 style="font-size:2.2rem; font-weight:700; margin-bottom:1.5rem;">Available Courses</h2>
+        <h2>Available Courses</h2>
         <div class="cards cards--row" style="display:flex; gap:2rem; flex-wrap:wrap; justify-content:center;">
           <a href="https://payhip.com/b/Bhb6T" class="card fade-in card--nav"
             style="text-decoration:none; color:inherit; min-width:300px; max-width:480px; flex:1 1 300px; cursor:pointer;">
@@ -99,6 +99,7 @@
           <ul class="footer__links">
             <li><a href="/">Home</a></li>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/shortcuts/">Shortcuts</a></li>
             <li><a href="/courses/">Courses</a></li>
             <li><a href="/consulting/">Consulting</a></li>
             <li><a href="/about/">About</a></li>
@@ -122,18 +123,13 @@
               LinkedIn
             </a>
           </div>
-          <p style="margin-top: 1rem; font-size: 0.9rem;">
-            <a href="mailto:support@nazarzhmurko.com"
-              style="color: #e0e0e0; text-decoration: none; transition: color 0.3s ease;">
-              📧 support@nazarzhmurko.com
-            </a>
-          </p>
+          <p class="footer__email-wrap"><a class="footer__email" href="mailto:support@nazarzhmurko.com">support@nazarzhmurko.com</a></p>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer__bottom">
-        <p class="footer__copyright">&copy; 2025 Shortomation. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Shortomation. All rights reserved.</p>
         <ul class="footer__legal">
           <li><a href="/privacy/">Privacy Policy</a></li>
           <li><a href="/cookies/">Cookie Policy</a></li>
