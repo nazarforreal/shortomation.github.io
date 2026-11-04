@@ -40,4 +40,26 @@
     <lastmod>2026-01-03</lastmod>
     <priority>0.50</priority>
   </url>
+  <!-- posts:start -->
+  <url>
+    <loc>https://nazarzhmurko.com/blog/contextual-awareness/</loc>
+    <lastmod>2025-07-24</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://nazarzhmurko.com/blog/post3/</loc>
+    <lastmod>2025-07-18</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://nazarzhmurko.com/blog/handy-apps/</loc>
+    <lastmod>2025-07-18</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <url>
+    <loc>https://nazarzhmurko.com/blog/post2/</loc>
+    <lastmod>2024-07-18</lastmod>
+    <priority>0.60</priority>
+  </url>
+  <!-- posts:end -->
 </urlset>

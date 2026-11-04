@@ -12,7 +12,8 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shortomation - Blog</title>
+  <title>Blog – Shortomation</title>
+  <meta property="og:site_name" content="Shortomation">
   <meta name="description"
     content="Explore Notion tips, shortcuts tutorials, and productivity insights from Shortomation. Learn how to master Notion automation and work smarter.">
   <link rel="canonical" href="https://nazarzhmurko.com/blog/">
@@ -20,14 +21,14 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nazarzhmurko.com/blog/">
-  <meta property="og:title" content="Blog - Notion Tips & Tutorials">
+  <meta property="og:title" content="Blog – Shortomation">
   <meta property="og:description" content="Notion tips, shortcuts tutorials, and productivity insights.">
   <meta property="og:image" content="https://nazarzhmurko.com/assets/logo transparent.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://nazarzhmurko.com/blog/">
-  <meta property="twitter:title" content="Blog - Notion Tips & Tutorials">
+  <meta property="twitter:title" content="Blog – Shortomation">
   <meta property="twitter:description" content="Notion tips, shortcuts tutorials, and productivity insights.">
   <meta property="twitter:image" content="https://nazarzhmurko.com/assets/logo transparent.png">
   <!-- Favicon and Web App Manifest -->
@@ -39,6 +40,121 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#2d6cdf">
   <link rel="stylesheet" href="/assets/style.css">
+  <!-- schema:start -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nazarzhmurko.com/#organization",
+      "name": "Shortomation",
+      "url": "https://nazarzhmurko.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nazarzhmurko.com/assets/logo%20transparent.png"
+      },
+      "description": "Shortomation makes Apple Shortcuts kits, Notion templates, courses and consulting for Notion power users and teams.",
+      "email": "support@nazarzhmurko.com",
+      "founder": {
+        "@id": "https://nazarzhmurko.com/about/#nazar"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "UA"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/nazar-zhmurko",
+        "https://youtube.com/@nazarshortcuts",
+        "https://www.threads.com/@notionshortcuts",
+        "https://nazarzhmurko.gumroad.com"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nazarzhmurko.com/#website",
+      "url": "https://nazarzhmurko.com/",
+      "name": "Shortomation",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://nazarzhmurko.com/#organization"
+      }
+    },
+    {
+      "@type": "Blog",
+      "@id": "https://nazarzhmurko.com/blog/#blog",
+      "name": "Shortomation Blog",
+      "url": "https://nazarzhmurko.com/blog/",
+      "publisher": {
+        "@id": "https://nazarzhmurko.com/#organization"
+      },
+      "author": {
+        "@id": "https://nazarzhmurko.com/about/#nazar"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Contextual Awareness in Shortcuts",
+          "url": "https://nazarzhmurko.com/blog/contextual-awareness/",
+          "datePublished": "2025-07-24"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Reusable shortcuts for Notion",
+          "url": "https://nazarzhmurko.com/blog/post3/",
+          "datePublished": "2025-07-18"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Apps that simplify my shortcuts development process",
+          "url": "https://nazarzhmurko.com/blog/handy-apps/",
+          "datePublished": "2025-07-18"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Top Notion Automation Ideas for Beginners",
+          "url": "https://nazarzhmurko.com/blog/post2/",
+          "datePublished": "2024-07-18"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://nazarzhmurko.com/about/#nazar",
+      "name": "Nazar Zhmurko",
+      "url": "https://nazarzhmurko.com/about/",
+      "image": "https://nazarzhmurko.com/assets/about1.jpg",
+      "jobTitle": "Notion and Apple Shortcuts automation consultant",
+      "worksFor": {
+        "@id": "https://nazarzhmurko.com/#organization"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/nazar-zhmurko",
+        "https://youtube.com/@nazarshortcuts",
+        "https://www.threads.com/@notionshortcuts"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://nazarzhmurko.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://nazarzhmurko.com/blog/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <!-- schema:end -->
 </head>
 
 <body>
@@ -68,14 +184,46 @@
     <div class="pane fade-in" style="text-align:center;">
       <section class="section section--posts">
         <h2>Latest</h2>
-        <div class="cards cards--row" id="posts-list" style="display:flex; justify-content:center;"></div>
+        <div class="cards cards--row" id="posts-list" style="display:flex; justify-content:center;">
+<!-- posts:start -->
+          <a href="/blog/contextual-awareness/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:flex-start;">
+            <div style="flex:1 1 auto; display:flex; flex-direction:column; justify-content:flex-start;">
+              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.25;">Contextual Awareness in Shortcuts</h3>
+              <div class="post-date" style="font-size:0.98rem; margin-bottom:0.7rem;"><time datetime="2025-07-24">July 24, 2025</time></div>
+              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.45;">Learn how to supercharge your Shortcuts even more</p>
+            </div>
+          </a>
+          <a href="/blog/post3/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:flex-start;">
+            <div style="flex:1 1 auto; display:flex; flex-direction:column; justify-content:flex-start;">
+              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.25;">Reusable shortcuts for Notion</h3>
+              <div class="post-date" style="font-size:0.98rem; margin-bottom:0.7rem;"><time datetime="2025-07-18">July 18, 2025</time></div>
+              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.45;">Explore the way to speed the shortcut creation process.</p>
+            </div>
+          </a>
+          <a href="/blog/handy-apps/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:flex-start;">
+            <div style="flex:1 1 auto; display:flex; flex-direction:column; justify-content:flex-start;">
+              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.25;">Apps that simplify my shortcuts development process</h3>
+              <div class="post-date" style="font-size:0.98rem; margin-bottom:0.7rem;"><time datetime="2025-07-18">July 18, 2025</time></div>
+              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.45;">Some handy utilities for shortcuts development</p>
+            </div>
+            <img src="/assets/posts/handy-apps-1.png" alt="Apps that simplify my shortcuts development process thumbnail" class="post-thumbnail" style="margin-top:1.2rem; border-radius:14px; width:100%; max-width:320px; height:140px; object-fit:cover; align-self:center; background:#f7f7f7; box-shadow:0 1px 4px rgba(0,0,0,0.04);" loading="lazy">
+          </a>
+          <a href="/blog/post2/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:flex-start;">
+            <div style="flex:1 1 auto; display:flex; flex-direction:column; justify-content:flex-start;">
+              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.25;">Top Notion Automation Ideas for Beginners</h3>
+              <div class="post-date" style="font-size:0.98rem; margin-bottom:0.7rem;"><time datetime="2024-07-18">July 18, 2024</time></div>
+              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.45;">A roundup of easy automation ideas to get started with Notion.</p>
+            </div>
+          </a>
+<!-- posts:end -->
+        </div>
       </section>
     </div>
     <div class="pane fade-in" style="text-align:center; margin-top:2.5rem;">
       <section class="section section--newsletter">
         <h2>Join My Substack Newsletter</h2>
         <p>Get the latest Notion shortcuts, kits, and updates straight to your inbox.</p>
-        <iframe src="https://nazarshortcuts.substack.com/embed" width="480" height="320"
+        <iframe title="Newsletter signup (Substack)" src="https://nazarshortcuts.substack.com/embed" width="480" height="320"
           style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
       </section>
     </div>
@@ -146,30 +294,6 @@
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
-
-    // Blog posts list rendering
-    fetch('/assets/posts.json')
-      .then(response => response.json())
-      .then(data => {
-        let posts = data.posts.slice();
-        // Sort posts by date descending
-        posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-        const container = document.getElementById('posts-list');
-        if (!posts.length) {
-          container.innerHTML = `<div class='card fade-in' style='min-width:220px; max-width:400px; margin:0 auto; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef;'><p style='font-size:1.1rem; color:#555; margin:0;'>No posts yet. Check back soon!</p></div>`;
-          return;
-        }
-        container.innerHTML = posts.map(post => `
-          <a href="/blog/${post.slug}/" class="card fade-in card--nav post-card" style="text-decoration:none; color:inherit; min-width:250px; max-width:400px; padding:2rem 1.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04); border:1.5px solid #e0e7ef; display:flex; flex-direction:column; justify-content:flex-start;">
-            <div style="flex:1 1 auto; display:flex; flex-direction:column; justify-content:flex-start;">
-              <h3 style="margin-bottom:0.5rem; font-size:1.3rem; font-weight:600; line-height:1.25;">${post.title}</h3>
-              <div style="color:#888; font-size:0.98rem; margin-bottom:0.7rem;">${new Date(post.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</div>
-              <p style="font-size:1.08rem; color:#444; margin-bottom:0; line-height:1.45;">${post.excerpt}</p>
-            </div>
-            ${post.thumbnail ? `<img src="${post.thumbnail}" alt="${post.title} thumbnail" class="post-thumbnail" style="margin-top:1.2rem; border-radius:14px; width:100%; max-width:320px; height:140px; object-fit:cover; align-self:center; background:#f7f7f7; box-shadow:0 1px 4px rgba(0,0,0,0.04);" loading="lazy">` : ''}
-          </a>
-        `).join('');
-      });
   </script>
 
   <!-- Cookie Consent Banner -->
